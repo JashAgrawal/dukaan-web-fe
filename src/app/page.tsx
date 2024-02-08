@@ -1,16 +1,16 @@
 import Card from "@/components/Card";
 import Hero from "@/components/Hero";
+import ProductSection from "@/components/ProductSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="space-y-4">
-      <Hero/>
-    <div className="flex space-x-4">
-      {[1,2,3,4].map((a)=>
-      <Card key={a}/>
-      )}
-    </div>
+    <div className="space-y-8 pb-12">
+      <Hero />
+      <ProductSection heading="Best Sellers" products={[1, 2, 3, 4]} />
+      <ProductSection heading="Best Sellers" products={[1, 2, 3, 4]} />
+      <ProductSection heading="Best Sellers" products={[1, 2, 3, 4]} />
+      <ProductSection heading="Best Sellers" products={[1, 2, 3, 4]} />
     </div>
   );
 }
